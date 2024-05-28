@@ -3376,8 +3376,6 @@ button.mfp-close:before {
 
 .crev-header2 {
   pointer-events: none;
-  padding-top: 180px;
-  padding-bottom: 120px;
   background-color: #FAE6DB;
   min-height: 100vh;
 }
