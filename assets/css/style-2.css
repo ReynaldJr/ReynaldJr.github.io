@@ -1631,6 +1631,10 @@ video {
   font-size: 80px;
 }
 
+.text-\[100px\] {
+  font-size: 100px;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -3379,11 +3383,10 @@ button.mfp-close:before {
   padding-top: 180px;
   padding-bottom: 130px;
   background-color: #FAE6DB;
-  height: 100svh;
+  min-height: 100svh;
 }
 
 .crev-header2 .text {
-  font-size: 120px;
   line-height: 1;
   position: relative;
   z-index: 2;
@@ -3397,7 +3400,9 @@ button.mfp-close:before {
   white-space: nowrap;
 }
 
-
+.selfie-mobile {
+  width: 100%;
+}
 
 .crev-header2 .img-long {
   overflow: hidden;
@@ -3412,7 +3417,7 @@ button.mfp-close:before {
   margin: 0 auto;
 }
 
-.crev-header2 img {
+.crev-header2 .iner-img img {
   max-width: 1000px;
   min-width: 750px;
   width: 100%;
@@ -3561,7 +3566,10 @@ button.mfp-close:before {
 
 
 
+.crev-header2 .img-long .iner-img {
+  display: none;
 
+}
 
 @media (min-width: 576px) {
   .menu-btn {
@@ -3570,6 +3578,10 @@ button.mfp-close:before {
 
   .sm-grid {
     display: grid;
+  }
+
+  .sm-hidden {
+    display: none;
   }
 
   .sm-flex {
@@ -3663,6 +3675,11 @@ button.mfp-close:before {
 }
 
 @media (min-width: 768px) {
+  .crev-header2 .img-long .iner-img {
+    display: block;
+  
+  }
+  
   .desktop-menu {
     display: flex;
   }
@@ -3979,7 +3996,7 @@ button.mfp-close:before {
   .xl-flex {
     display: flex;
   }
-  
+
   .xl\:h-full {
     height: 100%;
   }
@@ -4116,6 +4133,14 @@ button.mfp-close:before {
 
   .xl\:text-\[80px\] {
     font-size: 80px;
+  }
+
+  .xl\:text-\[100px\] {
+    font-size: 100px;
+  }
+
+  .xl\:text-\[120px\] {
+    font-size: 120px;
   }
 
   .xl\:text-xl {
@@ -4266,19 +4291,20 @@ button.mfp-close:before {
 @media screen and (max-width: 1024px) {
   .menu-full ul li a {
     font-size: 70px;
-	}
+  }
 }
+
 @media screen and (max-width: 767px) {
   .menu-full ul li a {
     font-size: 34px;
-	}
+  }
 }
 
 
 @media (min-width: 992px) {
   .col-lg-10 {
-      flex: 0 0 auto;
-      width: 83.33333333%;
+    flex: 0 0 auto;
+    width: 83.33333333%;
   }
 }
 
@@ -4286,7 +4312,7 @@ button.mfp-close:before {
   margin-bottom: 50px !important;
 }
 
-.row > * {
+.row>* {
   padding-left: 15px;
   padding-right: 15px;
   margin-top: 0;
@@ -4305,61 +4331,65 @@ button.mfp-close:before {
 .d-flex {
   display: flex !important;
 }
+
 span {
   display: inline-block;
 }
 
 @media (min-width: 992px) {
   .col-lg-5 {
-      flex: 0 0 auto;
-      width: 41.66666667%;
+    flex: 0 0 auto;
+    width: 41.66666667%;
   }
 }
+
 @media (min-width: 992px) {
   .col-lg-3 {
-      flex: 0 0 auto;
-      width: 25%;
+    flex: 0 0 auto;
+    width: 25%;
   }
 }
 
 @media (min-width: 992px) {
   .col-lg-4 {
-      flex: 0 0 auto;
-      width: 33.33333333%;
+    flex: 0 0 auto;
+    width: 33.33333333%;
   }
 }
 
 @media (min-width: 992px) {
   .offset-lg-1 {
-      margin-left: 8.33333333%;
+    margin-left: 8.33333333%;
   }
 }
 
 @media (min-width: 992px) {
   .col-lg-10 {
-      flex: 0 0 auto;
-      width: 83.33333333%;
+    flex: 0 0 auto;
+    width: 83.33333333%;
   }
 }
 
 /* layout-creative-2 */
 @media (min-width: 768px) {
-	.tt-grid.ttgr-layout-creative-2 .tt-grid-item:nth-of-type(4n+1),
-	.tt-grid.ttgr-layout-creative-2 .tt-grid-item:nth-of-type(4n+4) {
-		width: 58%;
-	}
 
-	.tt-grid.ttgr-layout-creative-2 .tt-grid-item:nth-of-type(4n+2),
-	.tt-grid.ttgr-layout-creative-2 .tt-grid-item:nth-of-type(4n+3) {
-		width: 42%;
-		padding-top: 9.8vw;
-	}
+  .tt-grid.ttgr-layout-creative-2 .tt-grid-item:nth-of-type(4n+1),
+  .tt-grid.ttgr-layout-creative-2 .tt-grid-item:nth-of-type(4n+4) {
+    width: 58%;
+  }
 
-	.tt-grid.ttgr-layout-creative-2 .tt-grid-item:last-child:nth-child(odd) {
-		width: 100%;
-		padding: 0 14vw;
-	}
-	.tt-grid.ttgr-layout-creative-2:not(.ttgr-portrait):not(.ttgr-not-cropped) .tt-grid-item:last-child:nth-child(odd) .ttgr-height {
-		padding-bottom: 55%;
-	}
+  .tt-grid.ttgr-layout-creative-2 .tt-grid-item:nth-of-type(4n+2),
+  .tt-grid.ttgr-layout-creative-2 .tt-grid-item:nth-of-type(4n+3) {
+    width: 42%;
+    padding-top: 9.8vw;
+  }
+
+  .tt-grid.ttgr-layout-creative-2 .tt-grid-item:last-child:nth-child(odd) {
+    width: 100%;
+    padding: 0 14vw;
+  }
+
+  .tt-grid.ttgr-layout-creative-2:not(.ttgr-portrait):not(.ttgr-not-cropped) .tt-grid-item:last-child:nth-child(odd) .ttgr-height {
+    padding-bottom: 55%;
+  }
 }
