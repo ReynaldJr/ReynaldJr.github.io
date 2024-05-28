@@ -2727,6 +2727,11 @@ body.light-skin .header.sticky .navbar.default:before {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+  color: black;
+}
+
+.menu-item {
+  color: #FAF4EF;
 }
 
 .menu-full-overlay:before {
@@ -2736,7 +2741,7 @@ body.light-skin .header.sticky .navbar.default:before {
   top: -20vh;
   width: 120vw;
   height: 120vh;
-  background: #FFB646;
+  background: #FAF4EF;
   -webkit-animation: close-menu-popup 1s cubic-bezier(0.3, 0, 0.3, 1) forwards;
   animation: close-menu-popup 1s cubic-bezier(0.3, 0, 0.3, 1) forwards;
 }
@@ -2800,7 +2805,7 @@ body.light-skin .header.sticky .navbar.default:before {
   font-size: 120px;
   line-height: 1;
   font-family: "Sorts Mill Goudy";
-  color: #fff;
+  color: #080808;
   text-decoration: none;
 }
 
@@ -3374,7 +3379,7 @@ button.mfp-close:before {
   padding-top: 180px;
   padding-bottom: 120px;
   background-color: #FAE6DB;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .crev-header2 .text {
@@ -3418,6 +3423,13 @@ button.mfp-close:before {
   position: absolute;
   bottom: 0;
   left: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.crev-header2 img {
+  max-width: 1300px;
+  min-width: 750px;
   width: 100%;
   margin: 0 auto;
 }
