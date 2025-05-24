@@ -3571,6 +3571,10 @@ button.mfp-close:before {
 
 }
 
+.banner-container-keyone img {
+  width: 100%;
+}
+
 @media (min-width: 576px) {
   .menu-btn {
     display: block;
